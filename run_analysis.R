@@ -47,6 +47,9 @@ data <- rbind(clean_train, clean_test)
 #Generates data frame for the average of each variable for each activity and each subject
 activity_subject_data <- summarise_all(group_by(data, activity, subject), mean)
 
+#Tidy the data
+activity_subject_data <- pivot_longer(activity_subject_data,cols=3:length(names(activity_subject_data)), names_to = "measurement", values_to = "mean value")
+
 #Set wd to previous directory
 setwd("../")
 

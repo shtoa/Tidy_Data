@@ -32,4 +32,4 @@ UPDATED: In this data set the following two values are explored:
 mean(): Mean value
 std(): Standard deviation
 
-The final data set is a data frame for the average of each variable for each activity and each subject
+The final data set is a data frame for the average of each variable for each activity and each subject and written to the file "data.txt" based on Tidy principles.

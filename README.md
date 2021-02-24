@@ -28,7 +28,7 @@ ACTIVITY LABELS (loc = "./UCI HAR Dataset):
 
 Output files: Generates data frame for the average of each variable for each activity and each subject
 
-Methodology: First the files are read. Then a defined function clean() is called that maps the activity label classifier to y, binds the columns of x,y and the subject as well as subseting the columns that contain mean or std measurements. The function is preformed on the testing and training datasets which are then merged to form one complete dataset. Then this dataset is grouped by activity and subject to give the final dataset for the averages for each column written to a table in the local directory under the name "data.txt".
+Methodology: First the files are read. Then a defined function clean() is called that maps the activity label classifier to y, binds the columns of x,y and the subject as well as subseting the columns that contain mean or std measurements. The function is preformed on the testing and training datasets which are then merged to form one complete dataset. Then this dataset is grouped by activity and subject to give the final dataset for the averages for each column which is then transformed using a pivot based on "Tidy" princples  written to a table in the local directory under the name "data.txt".
 
 
 # Nota Bene
